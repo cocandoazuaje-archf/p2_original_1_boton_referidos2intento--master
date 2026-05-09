@@ -1,0 +1,43 @@
+La compilación del proyecto iniciará ahora.
+Debe seleccionar el archivo WAR completo para desplegar en GlassFish.
+
+Compilando proyecto con Maven...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.cox.exa:referidos2intento >--------------------
+[INFO] Building referidos2intento 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ referidos2intento ---
+[INFO] Deleting /Users/carlosocando/Documentos/prueba2/p2_original_1_boton_referidos2intento--master/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ referidos2intento ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ referidos2intento ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/carlosocando/Documentos/prueba2/p2_original_1_boton_referidos2intento--master/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ referidos2intento ---
+[INFO] skip non existing resourceDirectory /Users/carlosocando/Documentos/prueba2/p2_original_1_boton_referidos2intento--master/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ referidos2intento ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ referidos2intento ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.3.2:war (default-war) @ referidos2intento ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [referidos2intento] in [/Users/carlosocando/Documentos/prueba2/p2_original_1_boton_referidos2intento--master/target/referidos2intento-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/Users/carlosocando/Documentos/prueba2/p2_original_1_boton_referidos2intento--master/src/main/webapp]
+[INFO] Building war: /Users/carlosocando/Documentos/prueba2/p2_original_1_boton_referidos2intento--master/target/referidos2intento-1.0.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.280 s
+[INFO] Finished at: 2026-05-08T12:56:30-04:00
+[INFO] ------------------------------------------------------------------------
+Eliminando despliegue anterior...

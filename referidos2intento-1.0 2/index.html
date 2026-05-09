@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema Referidos RRVV v1.65</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+        <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+        <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- 🔴 DEPENDE DE ESTA URL -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="js/todoController.js"></script>
+
+        <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+        <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+        <link href="css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+        <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+        <script type="text/javascript" src="js/keycloak2.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <link href="css/highcharts.css" rel="stylesheet" type="text/css" />
+        <script src="../angular/angular-animate.min.js"></script> 
+
+        <script src="js/angular-material.min.js" type="text/javascript"></script>
+        <script src="js/angular.js" type="text/javascript"></script>
+        
+        <script src="angular/angular.js" type="text/javascript"></script>
+       
+        
+        
+        <style>
+            body {
+                font-family: Arial;
+                padding: 20px;
+            }
+
+            .box {
+                padding: 15px;
+                background: #f3f3f3;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body ng-controller="MainCtrl">
+
+        <h1>AngularJS depende del CDN v1.65 </h1>
+
+        <div class="box">
+            <button ng-click="check()">
+                Probar AngularJS v1.65
+            </button>
+
+            <p>{{ message}}</p>
+        </div>
+
+        <script>
+                    // Si AngularJS NO carga desde la URL, esto NO funciona
+                    angular.module('app', [])
+                            .controller('MainCtrl', function ($scope) {
+
+                                $scope.message = "";
+
+                                $scope.check = function () {
+                                    $scope.message = "AngularJS está funcionando desde CDN 🚀";
+                                    alert("AngularJS ejecutado correctamente");
+                                };
+
+                            });
+        </script>
+
+    </body>
+</html>
